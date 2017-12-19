@@ -4,7 +4,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
+
 import com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker;
+
 import java.util.Date;
 
 public class SingleDatePickerMainActivity extends AppCompatActivity {
@@ -18,7 +20,7 @@ public class SingleDatePickerMainActivity extends AppCompatActivity {
         singleDateAndTimePicker.setListener(new SingleDateAndTimePicker.Listener() {
             @Override
             public void onDateChanged(String displayed, Date date) {
-                display(displayed);
+                display(singleDateAndTimePicker.getHourValue() + " " + singleDateAndTimePicker.getMinuteValue());
             }
         });
 

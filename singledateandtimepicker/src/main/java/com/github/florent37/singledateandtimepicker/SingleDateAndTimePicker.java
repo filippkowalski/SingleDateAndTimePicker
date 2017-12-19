@@ -386,6 +386,14 @@ public class SingleDateAndTimePicker extends LinearLayout {
         return time;
     }
 
+    public int getHourValue() {
+        return hoursPicker.getCurrentHour();
+    }
+
+    public int getMinuteValue() {
+        return minutesPicker.getCurrentMinute();
+    }
+
     public void setStepMinutes(int minutesStep) {
         minutesPicker.setStepMinutes(minutesStep);
     }
